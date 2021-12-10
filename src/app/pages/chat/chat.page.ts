@@ -29,6 +29,10 @@ export class ChatPage implements OnInit {
     });
   }
 
+  uploadFile(){
+    alert("subiendo archivo!")
+  }
+
   signOut() {
     this.chatService.signOut().then(() => {
       this.router.navigateByUrl('/', { replaceUrl: true });
